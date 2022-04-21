@@ -18,6 +18,10 @@ gem "bootsnap", require: false
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 6.1.1'
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'simple_form'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -27,6 +31,12 @@ group :development do
   gem "web-console"
 
 end
+
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg', '~> 1.3', '>= 1.3.5'
+end
+
 
 group :test do
   gem "capybara"
