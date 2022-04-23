@@ -12,24 +12,28 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right justify-content-end">
+        
         <li><%= link_to "Contact Us",  pages_contact_path %></li>
         <li><%= link_to "About Us",  pages_about_path %></li>
+        <% if !current_user %>
         <li><%= link_to "Sign Up",  new_user_registration_path %></li>
         <li><%= link_to "Sign In",  new_user_session_path %></li>
-        <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+        
       </ul>
+      <% else %> 
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle btn-dark" style="margin-left:2rem;" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
+        <button class="btn btn-secondary dropdown-toggle btn-dark" style="margin-left:4rem;" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        <%= current_user.username %>
         </button>
         <ul id="a" class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
           <li><a class="dropdown-item active" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><%= link_to "Edit My Profile",  edit_user_registration_path %></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
         </ul>
       </div>
+      <% end %>
     </div>
   </div>
 </nav>
