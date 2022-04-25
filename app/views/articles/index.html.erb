@@ -4,6 +4,8 @@
 
 <div id="articles">
   <% @articles.each do |article| %>
+    <strong>Created by:</strong>
+    <%= article.user.username %>
     <%= render article %>
     <p>
       <%= link_to "Show this article", article %>
