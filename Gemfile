@@ -26,6 +26,7 @@ gem 'popper_js', '~> 2.9.3'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'foreman'
 end
 
 group :development do

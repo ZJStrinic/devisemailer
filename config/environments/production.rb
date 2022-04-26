@@ -92,4 +92,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   config.action_mailer.default_url_options = { host: 'https://zvonesarticles.herokuapp.com/' }
+  
+  
+  
+  
 end
