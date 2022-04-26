@@ -42,6 +42,8 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.perform_deliveries = true
+  
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
@@ -70,7 +72,4 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   
   config.action_mailer.default_url_options = { host: 'https://c60a1c083f8745b6a32bba0f3b557228.vfs.cloud9.eu-central-1.amazonaws.com/' }
-  
-  
-  
 end

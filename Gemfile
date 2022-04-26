@@ -23,6 +23,7 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'simple_form'
 gem 'bootstrap', '~> 5.1.3'
 gem 'popper_js', '~> 2.9.3'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
