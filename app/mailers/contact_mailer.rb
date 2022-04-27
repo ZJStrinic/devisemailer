@@ -1,11 +1,11 @@
 class ContactMailer < ActionMailer::Base
- default to: "info@zvone.com"
+ default to: "zjstrinic@gmail.com"
 
  def contact_email(name, email, message)
  @name = name
  @email = email
  @message = message
 
- mail(from: email, subject: 'Zvone.com Contact Form Message')
+ mail(from: email, subject: 'Contact Form Message')
  end
 end
