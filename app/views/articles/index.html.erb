@@ -1,16 +1,7 @@
-<p style="color: green"><%= notice %></p>
+<%= render 'comments/comment' %>
 
-<h1>Articles</h1>
 
-<div id="articles">
-  <% @articles.each do |article| %>
-    <strong>Created by:</strong>
-    <%= article.user.username %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
-</div>
+
+<br>
 
 <%= link_to "New article", new_article_path %>
