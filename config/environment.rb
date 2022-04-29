@@ -1,6 +1,6 @@
 # Load the Rails application.
 require_relative "application"
-require_relative '../.local_env.yml'
+require_relative '../.env'
 
 # Initialize the Rails application.
 Rails.application.initialize!
