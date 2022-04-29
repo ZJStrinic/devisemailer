@@ -29,7 +29,7 @@ class CommentsController < ApplicationController
         @comment = @article.comments.find(params[:id])
     end
     
-    def destroy
+    def show
         @article = Article.find(params[:article_id])
         @comment = @article.comments.find(params[:id])
         @comment.destroy
