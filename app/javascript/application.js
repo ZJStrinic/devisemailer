@@ -9,9 +9,3 @@ import "controllers";
 //= require_tree .
 //= require popper
 //= require bootstrap-sprockets
-
-$(document).on("turbo:load", () => {
-  console.log("turbo")
-  $('[data-toggle="tooltip"]').tooltip()
-  $('[data-toggle="popover"]').popover()
-})
