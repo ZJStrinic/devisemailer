@@ -7,7 +7,7 @@ describe Calculator do
   it "sums four numbers in the array" do
     expect(subject.sum([2,4,5,1])).to eq(12)
   end
-=begin
+  
   it "gets the biggest number of the array" do
     expect(subject.max([2,4,5,1])).to eq(5)
   end
@@ -23,5 +23,4 @@ describe Calculator do
   it "returns self method" do
    expect(Calculator.hello).to eq("Hello, I am your Calculator :)")  
   end
-=end
 end
