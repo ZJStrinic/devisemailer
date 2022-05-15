@@ -20,13 +20,13 @@ class Calculator
   
   def odd
     if list_of_numbers.sum.odd? === true
-      puts true
+      true
     else
-      puts false
+      false
     end
   end
   
   def self.hello
-    puts "Hello, I am your Calculator :) "
+    "Hello, I am your Calculator :)"
   end
 end
